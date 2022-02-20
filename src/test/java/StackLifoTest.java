@@ -1,15 +1,15 @@
 import junit.framework.TestCase;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-class StackFifoTest extends TestCase {
+public class StackLifoTest extends TestCase {
 
     @Test
-    void testFifo() {
-        StackFifo sf = new StackFifo();
+    public void testLifo() {
+        StackLifo sf = new StackLifo();
 
         System.out.println(Arrays.toString(sf.objArray));
 
@@ -38,6 +38,9 @@ class StackFifoTest extends TestCase {
         sf.pop();
         sf.pop();
         sf.pop();
+
+        System.out.println(Arrays.toString(sf.objArray));
+
         sf.pop();
         sf.pop();
 
